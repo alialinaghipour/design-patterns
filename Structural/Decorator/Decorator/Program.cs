@@ -1,23 +1,21 @@
 ﻿using Decorator;
 
 var largeSandwich = new LargeSandwich();
-Console.WriteLine(largeSandwich.GetPrice());
+Console.WriteLine(largeSandwich.GetName() + " ==> " + largeSandwich.GetPrice());
+var largeSandwichWithSauce = new SandwichWithSauce(largeSandwich);
+Console.WriteLine(largeSandwichWithSauce.GetName() + " ==> " + largeSandwichWithSauce.GetPrice());
+
 
 var mediumSandwich=new MediumSandwich();
-Console.WriteLine(mediumSandwich.GetPrice());
+var mediumSandwichWithPotato = new SandwichWithPotato(mediumSandwich);
+Console.WriteLine(mediumSandwichWithPotato.GetName() + " ==> " + mediumSandwichWithPotato.GetPrice());
 
 var smallSandwich = new SmallSandwich();
-Console.WriteLine(smallSandwich.GetPrice());
+var smallSandwichWithSauce = new SandwichWithSauce(smallSandwich);
+var smallSandwichWithPotato = new SandwichWithPotato(smallSandwichWithSauce);
+Console.WriteLine(smallSandwichWithPotato.GetName() + " ==> " + smallSandwichWithPotato.GetPrice());
 
-Console.WriteLine("\n***\n");
 
-var largeSandwichWithSauce = new LargeSandwichWithSauce();
-Console.WriteLine(largeSandwichWithSauce.GetPrice());
 
-var mediumSandwichWithSauce = new MediumSandwichWithSauce();
-Console.WriteLine(mediumSandwichWithSauce.GetPrice());
-
-var smallSanwichWithSauce = new SmallSandwichWithSauce();
-Console.WriteLine(smallSanwichWithSauce.GetPrice());
 
 

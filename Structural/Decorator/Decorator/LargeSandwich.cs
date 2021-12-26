@@ -2,9 +2,14 @@
 {
     public class LargeSandwich : Sandwich
     {
-        public override string GetPrice()
+        public override string GetName()
         {
-            return "LargeSandwich ==> 300";
+            return "LargeSandwich";
+        }
+
+        public override int GetPrice()
+        {
+            return 300;
         }
     }
 }

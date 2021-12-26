@@ -8,7 +8,8 @@ namespace Decorator
 {
     public abstract class Sandwich
     {
-        public abstract string GetPrice();
+        public abstract int GetPrice();
+        public abstract string GetName();
     }
 
     
