@@ -11,27 +11,5 @@ namespace Decorator
         public abstract string GetPrice();
     }
 
-    public class LargeSandwich : Sandwich
-    {
-        public override string GetPrice()
-        {
-            return "LargeSandwich ==> 300";
-        }
-    }
-
-    public class MediumSandwich : Sandwich
-    {
-        public override string GetPrice()
-        {
-            return "MediumSandwich ==> 200";
-        }
-    }
-
-    public class SmallSandwich : Sandwich
-    {
-        public override string GetPrice()
-        {
-            return "SmallSandwich ==> 100";
-        }
-    }
+    
 }
